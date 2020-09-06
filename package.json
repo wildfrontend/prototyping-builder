@@ -1,0 +1,23 @@
+{
+    "name": "prototyping-builder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prettier": "prettier --config .prettierrc --write **.(html||scss)",
+        "start": "parcel -p 4000 src/pages/index.html",
+        "build": "parcel build src/pages/index.html"
+    },
+    "keywords": [],
+    "author": "louis.luo",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "^2.1.1",
+        "sass": "^1.26.10"
+    }
+}

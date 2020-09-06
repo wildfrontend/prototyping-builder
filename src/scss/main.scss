@@ -1,0 +1,14 @@
+// vendors
+@import url('./vendors/preflight.css');
+@import url('./vendors/normalize.css');
+/* Import Base */
+@import "~@getbase/base/scss/_mixins";
+@import "~@getbase/base/scss/core";
+// pages
+@import './pages/_index.scss';
+// components
+@import './components/block.scss';
+
+html {
+    font-size: 16px;
+}
