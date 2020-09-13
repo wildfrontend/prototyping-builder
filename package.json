@@ -1,23 +1,35 @@
 {
-    "name": "prototyping-builder",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "prettier": "prettier --config .prettierrc --write **.(html||scss)",
-        "start": "parcel -p 4000 src/pages/index.html",
-        "build": "parcel build src/pages/index.html"
-    },
-    "keywords": [],
-    "author": "louis.luo",
-    "license": "ISC",
-    "devDependencies": {
-        "@commitlint/cli": "^8.3.5",
-        "@commitlint/config-conventional": "^8.3.4",
-        "husky": "^4.2.5",
-        "lint-staged": "^10.2.11",
-        "parcel-bundler": "^1.12.4",
-        "prettier": "^2.1.1",
-        "sass": "^1.26.10"
-    }
+  "name": "prototyping-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc --write **.(html||scss)",
+    "start": "parcel -p 4000 src/pages/index.html",
+    "build": "parcel build src/pages/index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "louis.luo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/html": "^6.0.21",
+    "babel-loader": "^8.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.1",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.7"
+  }
 }
