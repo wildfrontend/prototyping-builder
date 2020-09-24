@@ -6,7 +6,7 @@
   "scripts": {
     "prettier": "prettier --config .prettierrc --write **.(html||scss)",
     "start": "parcel -p 4000 src/pages/index.html",
-    "build": "parcel build src/pages/index.html",
+    "build": "parcel build src/pages/index.html --no-minify --no-cache",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -25,6 +25,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.3",
+    "posthtml-modules": "^0.6.2",
     "prettier": "^2.1.1",
     "sass": "^1.26.10"
   },
