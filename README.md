@@ -1,28 +1,71 @@
 # Prototyping-Builder <!-- omit in toc -->
 > Static HTML Boilerplate
 
+- [Install](#install)
+- [Refer](#refer)
 - [Usage](#usage)
 - [File Structure](#file-structure)
   - [assets](#assets)
   - [pages](#pages)
+  - [components](#components)
   - [scss](#scss)
 - [Design pattern](#design-pattern)
   - [HTML Tag](#html-tag)
   - [CSS](#css)
 - [Commit Formmat](#commit-formmat)
+  
+## Install
 
+**安裝環境**
+
+```
+npm i 
+```
+
+**啟動專案**
+
+```
+yarn start
+```
+
+
+如果啟動失敗
+
+- 刪除 `node_modules`
+- 重新執行 `npm i`、`yarn start`
+
+## Refer
+
+- https://dev.to/caiojhonny/html-includes-with-gulp-js-2def
+- https://github.com/getbase/starter/
+  
 ## Usage
 
-- html 
-- static files(svg,png,jpeg,woff ...)
-- scss
-- js (not use)
+**打包css**
 
+```
+yarn build
+``` 
+
+打包後的資料夾為`public`
+
+**載入共用html**
+
+```html
+  @@include('../components/header.html')
+  <main>
+    <!-- content -->
+  </main>
+  @@include('../components/footer.html')
+```
 ## File Structure
 
 - assets
 - pages
 - scss
+- components
+- demo
+- dist
 
 
 ### assets
@@ -31,10 +74,11 @@ in assets folder , classifying file by type
 
 ex: `png`,`jpeg` is classifying to `images` folders
 
+
 ```
  - assets
     - images 
-    - svg (icon...)
+    - icons (icon...)
     - fonts 
 ```
 
@@ -47,6 +91,10 @@ one page one file,  `Avoid too much nesting`
     - about.html (about page)
     ...
 ```
+
+### components
+html 元件，可以重用的html
+
 
 ### scss
 write css by `scss`, and file structure follow by `scss style`
